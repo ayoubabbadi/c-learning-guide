@@ -1,31 +1,72 @@
 # C Language Learning Guide
 
-This repository contains a single, comprehensive C file (`leran.c`) designed as a hands-on reference guide for learning the C programming language.
+This repository contains a comprehensive C file (`leran.c`) designed as a hands-on reference guide for learning the C programming language.
 
 ## About This Project
 
-This C program is structured into seven distinct "levels," each encapsulated in its own function. It's designed to be read top-to-bottom, guiding a learner from the absolute basics to advanced, complex topics. All concepts are demonstrated with clear, commented code examples.
+This guide is structured into distinct "levels" encapsulated in functions. It is split into two main files:
 
-### Topics Covered:
+* `leran.c`: The core guide covering fundamentals (Levels 1-7).
+* `leran_advanced.c`: A continuation covering advanced topics (Levels 8-11).
 
-* **Level 1: The Bare Essentials:** Variables, data types, `printf` / `scanf`, and constants.
-* **Level 2: Operations & Control Flow:** Arithmetic/logical operators, `if`/`else if`/`else`, `switch` statements, and `for`/`while` loops.
-* **Level 3: Functions & Pointers:** Creating functions, understanding `return` types, and the fundamentals of pointers and pass-by-reference.
-* **Level 4: Complex Data Structures:** 1D, 2D, and 3D arrays, C-style strings, and common functions from `<string.h>`.
-* **Level 5: Custom Structures & Memory:** Creating custom data types with `struct` and `typedef`, and managing memory with `malloc` and `free`.
-* **Level 6: Advanced Topics:** Reading from and writing to files (File I/O) and the use of function pointers.
-* **Level 7: OOP Simulation:** An advanced example of how to simulate Object-Oriented Programming (OOP) concepts like classes, methods, and constructors in C.
+All concepts are demonstrated with clear, commented code examples.
+
+---
+
+### Part 1: `leran.c` (The Fundamentals)
+
+This file covers the essential building blocks of C.
+
+**Topics Covered:**
+* **Level 1:** Variables, Data Types, `printf` / `scanf`.
+* **Level 2:** Operators, `if`/`else`, `switch`, `for`/`while` loops.
+* **Level 3:** Functions, Pointers, and Pass-by-Reference.
+* **Level 4:** Arrays (1D, 2D, 3D), Strings, and `<string.h>`.
+* **Level 5:** `struct`, `typedef`, `malloc`, and `free`.
+* **Level 6:** File I/O (`fopen`, `fprintf`, `fgets`, `fclose`) and Function Pointers.
+* **Level 7:** Simulating Object-Oriented Programming (OOP) in C.
+
+---
+
+### Part 2: `leran_advanced.c` (Advanced Topics)
+
+This file explores more complex and specialized features of C.
+
+**Topics Covered:**
+* **Level 8:** Specialized Data Types (`enum`, `union`).
+* **Level 9:** Preprocessor Directives (`#define`, `#if`, `#ifdef`) and Bitwise Operations (`&`, `|`, `^`, `~`, `<<`, `>>`).
+* **Level 10:** Storage Classes (`static`, `extern`) and Command Line Arguments (`argc`, `argv`).
+* **Level 11:** A complete data structure implementation: The Linked List.
+
+---
 
 ## How to Use
 
-You can clone this repository and compile the file to see the output of every example.
+You can clone this repository and compile the files to see the output of every example.
 
-### Compile and Run
+### Compiling Part 1 (Fundamentals)
 
-1.  **Compile the code:**
+1.  **Compile:**
     ```bash
     gcc leran.c -o leran
     ```
-2.  **Run the executable:**
+2.  **Run:**
     * On Linux/Mac: `./leran`
     * On Windows: `leran.exe`
+
+### Compiling Part 2 (Advanced)
+
+This program is designed to accept command-line arguments.
+
+1.  **Compile:**
+    ```bash
+    gcc leran_advanced.c -o leran_adv
+    ```
+2.  **Run (without arguments):**
+    ```bash
+    ./leran_adv
+    ```
+3.  **Run (with arguments to see the demo):**
+    ```bash
+    ./leran_adv hello world 123
+    ```
